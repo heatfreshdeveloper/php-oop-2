@@ -1,6 +1,6 @@
 <?php 
 
-require_once __DIR__ . "./utente.php";
+require_once __DIR__ . "./Utente.php";
 
 class UtentePremium extends Utente{
     public $discount;
@@ -13,10 +13,8 @@ class UtentePremium extends Utente{
        $this->fastShipment = $_fastShipment;
     }
 
-
-   
 }
 
 
-$pippo = new UtentePremium("40%","2");
+$utentePremium = new UtentePremium("40%","2");
 ?>

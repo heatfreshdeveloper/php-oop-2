@@ -3,14 +3,14 @@
 class Utente {
     public $email;
     public $name;
-    public $payment;
+    protected $payment;
 
 
 
     public function __construct($_email, $_name, $_payment)
     {
-        $this->email = $_email;
-        $this->name = $_name;
+        $this->setEmail($_email);
+        $this->setName($_name);
         $this->setPayment($_payment);
     }
 
